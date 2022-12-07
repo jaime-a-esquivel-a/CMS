@@ -24,6 +24,19 @@ This application allows the user to perform CRUD operations using inquirer, mysq
 ```git clone```
 2. Install all npm dependencies from the terminal.  
 ```npm install```
+3. add the DB credentials for your local DB on server.js.
+```
+const conn = mysql.createConnection(
+    {
+      host: 'localhost',
+      user: '',      // add your DB user
+      password: '',  // add the password for user
+      database: 'employees_db' .
+    },
+    console.log(`Connected to employees_db database.`)
+  );
+```
+
 
 -- 
 

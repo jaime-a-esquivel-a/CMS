@@ -4,9 +4,9 @@ const interface = require("./lib/interface");
 const conn = mysql.createConnection(
     {
       host: 'localhost',
-      user: 'root',
-      password: 'Bl4ckb12d',
-      database: 'employees_db'
+      user: '',      // add your DB user
+      password: '',  // add the password for user
+      database: 'employees_db' .
     },
     console.log(`Connected to employees_db database.`)
   );
